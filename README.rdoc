@@ -1,20 +1,32 @@
 = sentry-reddit
 
-* {Homepage}[https://rubygems.org/gems/sentry-reddit]
-* {Documentation}[http://rubydoc.info/gems/sentry-reddit/frames]
-* {Email}[mailto:apersson.93 at gmail.com]
-
-== Description
-
-TODO: Description
+Parses messages for Reddit links then replies with information about it.
 
 == Features
 
+* Replies with information about posted links
+
 == Examples
 
-  require 'sentry/reddit'
+  require 'cinch'
+  require 'cinch/plugins/sentry/reddit'
 
-== Requirements
+  bot = Cinch::Bot.new do
+    configure do |c|
+      c.nick = "Raknet"
+      c.server = "irc.oftc.net"
+      c.channels = ["#cinchdev"]
+      c.plugins.plugins = [Cinch::Plugins::Sentry::Reddit]
+      c.plugins.options = {
+        Cinch::Plugins::Sentry::Reddit => {
+          "username" => "hello",
+          "password" => "hello"
+        }
+      }
+    end
+  end
+
+  bot.start
 
 == Install
 
@@ -22,6 +34,6 @@ TODO: Description
 
 == Copyright
 
-Copyright (c) 2015 jRiddick
+Copyright (c) 2015 Alexander Persson
 
 See LICENSE.txt for details.
