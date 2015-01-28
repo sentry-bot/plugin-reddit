@@ -3,8 +3,7 @@
 Gem::Specification.new do |gem|
   gem.name          = "sentry-reddit"
   gem.version       = File.new("VERSION", 'r').read.chomp
-  gem.summary       = %q{TODO: Summary}
-  gem.description   = %q{TODO: Description}
+  gem.summary       = %q{Parses messages for reddit links then replies with information about the link}
   gem.license       = "MIT"
   gem.authors       = ["jRiddick"]
   gem.email         = "apersson.93@gmail.com"
