@@ -1,0 +1,27 @@
+= sentry-reddit
+
+* {Homepage}[https://rubygems.org/gems/sentry-reddit]
+* {Documentation}[http://rubydoc.info/gems/sentry-reddit/frames]
+* {Email}[mailto:apersson.93 at gmail.com]
+
+== Description
+
+TODO: Description
+
+== Features
+
+== Examples
+
+  require 'sentry/reddit'
+
+== Requirements
+
+== Install
+
+  $ gem install sentry-reddit
+
+== Copyright
+
+Copyright (c) 2015 jRiddick
+
+See LICENSE.txt for details.

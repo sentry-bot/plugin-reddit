@@ -1,0 +1,1 @@
+require 'sentry/reddit/version'
