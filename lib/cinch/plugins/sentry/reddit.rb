@@ -73,8 +73,8 @@ module Cinch
                           Format(:green, "Reddit"),
                           Format(:blue, thread.author),
                           Format(:bold, thread.title),
-                          Format(:teal, thread.total_comments.to_s),
                           Format(:orange, thread.upvotes.to_s),
+                          Format(:teal, thread.total_comments.to_s),
                           Format(:underline, thread.short_link),
                           Format(if not thread.nsfw? then :green else :red end,
                                  if not thread.nsfw? then "SFW" else "NSFW" end)])
@@ -100,8 +100,8 @@ module Cinch
                         Format(:green, "Reddit"),
                         Format(:blue, thread.author),
                         Format(:bold, thread.title),
-                        Format(:teal, thread.total_comments.to_s),
                         Format(:orange, thread.upvotes.to_s),
+                        Format(:teal, thread.total_comments.to_s),,
                         Format(:underline, thread.short_link),
                         Format(if not thread.nsfw? then :green else :red end,
                                  if not thread.nsfw? then "SFW" else "NSFW" end)])
