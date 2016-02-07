@@ -17,8 +17,8 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'bundler', '~> 1.0'
   gem.add_development_dependency 'rake', '~> 0.8'
 
-  gem.add_dependency "cinch"
-  gem.add_dependency "redditkit"
-  gem.add_dependency "twitter-text"
-  gem.add_dependency "sentry-helper"
+  gem.add_dependency "cinch", "~> 2.0"
+  gem.add_dependency "redditkit", "~> 1.0"
+  gem.add_dependency "twitter-text", "~> 1.13"
+  gem.add_dependency "sentry-helper", "~> 0.1.0"
 end
